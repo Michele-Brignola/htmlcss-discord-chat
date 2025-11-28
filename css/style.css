@@ -45,7 +45,7 @@ div.sidebar li {
 
 img.side-img {
   border-radius: 50%;
-  transition: border-radius 0.3s ease;
+  transition: border-radius 0.3s;
 }
 
 li.side-item.active img.side-img,
@@ -91,7 +91,7 @@ nav.footer-nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 120px;
 }
 
 nav.footer-nav a {
@@ -100,11 +100,10 @@ nav.footer-nav a {
   align-items: center;
   gap: 5px;
   color: #b9bbbe;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 
-nav.footer-nav i,
-nav.footer-nav img {
+nav.footer-nav i {
   position: relative;
   font-size: 30px;
   translate: 0px -10px;
@@ -116,7 +115,12 @@ nav.footer-nav span {
   translate: 0px 25px;
 }
 
-nav.footer-nav .img-profilo {
+nav.footer-nav img {
   width: 30px;
   border-radius: 50%;
+  translate: 0px -10px;
+}
+
+nav.footer-nav a:hover {
+  color: #ffffff;
 }
