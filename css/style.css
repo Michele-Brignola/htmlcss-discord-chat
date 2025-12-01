@@ -1,3 +1,16 @@
+/* Colori */
+:root {
+  --text-color: #ffffff;
+
+  --wrapper-background-color: #141318;
+
+  --chat-background-color: #1c1d22;
+  --chat-second-color: #373a43;
+  --chat-active-card-color: #26262E;
+
+  --footer-background-color: #2d2d35;
+}
+
 /* RESET */
 * {
   margin: 0;
@@ -30,7 +43,7 @@ div.wrapper {
   flex-direction: column;
   overflow: hidden;
 
-  background-color: #141318;
+  background-color: var(--wrapper-background-color);
 }
 
 div.main {
@@ -75,7 +88,7 @@ div.chat-section {
   overflow: auto;
   margin-top: 10px;
   border-top-left-radius: 15px;
-  background-color: #1c1d22;
+  background-color: var(--chat-background-color);
 }
 
 div.chat-section h1 {
@@ -97,7 +110,7 @@ div.chat-bar i.bi-search {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #373a43;
+  background-color: var(--chat-second-color);
 }
 
 div.chat-bar a.add-friend {
@@ -109,7 +122,7 @@ div.chat-bar a.add-friend {
   width: 340px;
   height: 30px;
   border-radius: 15px;
-  background-color: #373a43;
+  background-color: var(--chat-second-color);
 }
 
 /* Chats */
@@ -119,6 +132,7 @@ div.chats {
 
 div.chats li {
   margin: 13px 0;
+  overflow-y: auto;
 }
 
 div.chats li.chat-item {
@@ -128,7 +142,7 @@ div.chats li.chat-item {
 
 li.chat-item.active,
 li.chat-item:hover {
-  background-color: #26262E;
+  background-color: var(--chat-active-card-color);
   border-radius: 10px;
 }
 
@@ -162,7 +176,7 @@ a.chat-card::after {
 
 li.chat-item.active a.chat-card::after,
 li.chat-item:hover a.chat-card::after {
-  border: 5px solid #26262E;
+  border: 5px solid var(--chat-active-card-color);
 }
 
 li.chat-item div.info-chat-card {
@@ -172,7 +186,7 @@ li.chat-item div.info-chat-card {
 }
 
 li.chat-item span {
-  opacity: 70%;
+  opacity: 50%;
 }
 
 li.chat-item.active span,
@@ -187,7 +201,7 @@ li.chat-item:hover span {
 /* Footer */
 div.footer {
   height: 80px;
-  background-color: #2d2d35;
+  background-color: var(--footer-background-color);
 }
 
 nav.footer-nav {
